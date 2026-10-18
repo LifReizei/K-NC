@@ -1,0 +1,101 @@
+{
+  "id": "nyaaclaw",
+  "name": "NyaaClaw",
+  "version": "1.1.0",
+  "apiVersion": 11,
+  "entry": "plugin.js",
+  "icon": "icon.png",
+  "description": "Anime desde Nyaa.si con carátulas y metadatos de AniList, filtrado avanzado por calidad, códec, subtítulos e idioma, integrado con Torcino.",
+  "author": "Nanashi Mumei & Hooman",
+  "hosts": [
+    "nyaa.si",
+    "graphql.anilist.co",
+    "animeav1.com"
+  ],
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "episodes",
+    "resolve"
+  ],
+  "categories": [
+    "anime"
+  ],
+  "color": "#10B981",
+  "theme": {
+    "accent": "#059669",
+    "onAccent": "#FFFFFF",
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "highlight": "#34D399"
+  },
+  "debug": false,
+  "telemetry": true,
+  "settings": [
+    {
+      "key": "categoryFilter",
+      "label": "Categoría por defecto en Nyaa",
+      "type": "select",
+      "default": "1_2",
+      "options": [
+        { "value": "1_2", "label": "Anime - Anime Translated (Subtitulado)" },
+        { "value": "1_4", "label": "Anime - Raw (Sin subtítulos)" },
+        { "value": "1_3", "label": "Anime - Non-English-translated" },
+        { "value": "1_1", "label": "Anime - Anime Music Video" },
+        { "value": "0_0", "label": "Todas las categorías" }
+      ]
+    },
+    {
+      "key": "preferredQuality",
+      "label": "Calidad de video preferida",
+      "type": "select",
+      "default": "1080p",
+      "options": [
+        { "value": "any", "label": "Cualquiera" },
+        { "value": "8k", "label": "8K / 4320p" },
+        { "value": "4k", "label": "4K / 2160p" },
+        { "value": "1080p", "label": "1080p (Full HD)" },
+        { "value": "720p", "label": "720p (HD)" },
+        { "value": "480p", "label": "480p (SD)" }
+      ]
+    },
+    {
+      "key": "preferredCodec",
+      "label": "Códec de video preferido",
+      "type": "select",
+      "default": "h264",
+      "options": [
+        { "value": "any", "label": "Cualquiera" },
+        { "value": "h264", "label": "H.264 / AVC (AVC1)" },
+        { "value": "h265", "label": "H.265 / HEVC" },
+        { "value": "av1", "label": "AV1" },
+        { "value": "mp4", "label": "MP4 / M4V" }
+      ]
+    },
+    {
+      "key": "preferredAudio",
+      "label": "Idioma de audio preferido",
+      "type": "select",
+      "default": "jp",
+      "options": [
+        { "value": "any", "label": "Cualquiera" },
+        { "value": "jp", "label": "Japonés (JP)" },
+        { "value": "en", "label": "Inglés (EN)" },
+        { "value": "es", "label": "Español (ES/LATAM)" }
+      ]
+    },
+    {
+      "key": "subtitleLanguage",
+      "label": "Idioma de subtítulos preferido",
+      "type": "select",
+      "default": "es",
+      "options": [
+        { "value": "any", "label": "Cualquiera" },
+        { "value": "es", "label": "Español (ES / LATAM)" },
+        { "value": "en", "label": "Inglés (EN)" },
+        { "value": "raw", "label": "Raw / Sin subtítulos" }
+      ]
+    }
+  ]
+}
