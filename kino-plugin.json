@@ -1,0 +1,57 @@
+{
+  "id": "nyaaclaw",
+  "name": "NyaaClaw",
+  "version": "1.1.0",
+  "apiVersion": 11,
+  "entry": "plugin.js",
+  "icon": "icon.png",
+  "description": "Anime desde Nyaa.si con carátulas de AniList, filtrado avanzado y reproducción con Torcino.",
+  "author": "Mumei",
+  "hosts": [
+    "nyaa.si",
+    "graphql.anilist.co"
+  ],
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "episodes",
+    "resolve",
+    "externalResolve"
+  ],
+  "categories": [
+    "anime"
+  ],
+  "externalResolver": {
+    "package": "com.kino.torcino",
+    "apk": {
+      "url": "https://github.com/torcino/torcino/releases/download/v0.1.1/torcino-0.1.1-universal.apk",
+      "sha256": "b9734aa6172bc3ce713e37260eb6500f6c2ac41e82b2940a47be6a2f7c73b1e3",
+      "label": "Torcino"
+    }
+  },
+  "color": "#10B981",
+  "theme": {
+    "accent": "#059669",
+    "onAccent": "#FFFFFF",
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "highlight": "#34D399"
+  },
+  "debug": false,
+  "telemetry": true,
+  "settings": [
+    {
+      "key": "preferredQuality",
+      "label": "Calidad de video preferida",
+      "type": "select",
+      "default": "1080p",
+      "options": [
+        { "value": "any", "label": "Cualquiera" },
+        { "value": "1080p", "label": "1080p" },
+        { "value": "720p", "label": "720p" }
+      ]
+    }
+  ],
+  "homepage": "https://github.com/torcino/kino-plugin-torrentclaw"
+}
