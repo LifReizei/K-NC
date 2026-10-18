@@ -1,28 +1,15 @@
 {
-  "id": "nyaa-claw",
-  "name": "NyaaClaw",
-  "version": "1.1.0",
+  "id": "nyaa-player",
+  "name": "Nyaa Player",
+  "version": "1.0.0",
   "apiVersion": 11,
   "entry": "plugin.js",
   "icon": "icon.png",
-  "description": "Anime desde Nyaa.si con AniList y Torcino.",
+  "description": "Anime desde Nyaa.si, reproducido con Torcino.",
   "author": "Mumei",
-  "homepage": "https://github.com/torcino/kino-plugin-torrentclaw",
-  "hosts": [
-    "nyaa.si",
-    "graphql.anilist.co"
-  ],
-  "capabilities": [
-    "search",
-    "home",
-    "browse",
-    "episodes",
-    "resolve",
-    "externalResolve"
-  ],
-  "categories": [
-    "anime"
-  ],
+  "hosts": ["nyaa.si", "graphql.anilist.co"],
+  "capabilities": ["search", "home", "resolve", "externalResolve"],
+  "categories": ["anime"],
   "externalResolver": {
     "package": "com.kino.torcino",
     "apk": {
@@ -31,33 +18,5 @@
       "label": "Torcino"
     }
   },
-  "color": "#10B981",
-  "theme": {
-    "accent": "#059669",
-    "onAccent": "#FFFFFF",
-    "background": "#0F172A",
-    "surface": "#1E293B",
-    "highlight": "#34D399"
-  },
-  "debug": false,
-  "telemetry": true,
-  "settings": [
-    {
-      "key": "qualitySection",
-      "label": "Calidad",
-      "type": "section",
-      "hint": "Selecciona tu calidad preferida."
-    },
-    {
-      "key": "preferredQuality",
-      "label": "Calidad de video",
-      "type": "select",
-      "default": "1080p",
-      "options": [
-        { "value": "1080p", "label": "1080p" },
-        { "value": "720p", "label": "720p" },
-        { "value": "any", "label": "Cualquiera" }
-      ]
-    }
-  ]
+  "color": "#10B981"
 }
