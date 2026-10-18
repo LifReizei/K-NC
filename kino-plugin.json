@@ -7,6 +7,7 @@
   "icon": "icon.png",
   "description": "Anime desde Nyaa.si con carátulas y metadatos de AniList, filtrado avanzado y reproducción por enlace magnet para Torcino.",
   "author": "Nanashi Mumei & Hooman",
+  "homepage": "https://github.com/torcino/kino-plugin-torrentclaw",
   "hosts": [
     "nyaa.si",
     "graphql.anilist.co",
